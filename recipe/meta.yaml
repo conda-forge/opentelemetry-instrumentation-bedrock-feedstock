@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-bedrock" %}
-{% set version = "0.41.0" %}
+{% set version = "0.42.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_bedrock-{{ version }}.tar.gz
-  sha256: b1bbae448ec3b0b56cc362d4b9216a0648c1ba4b9f7bfcffe9a933ee88affd04
+  sha256: 2f374124232e2be114a812ba1a64abc2e2af14031e5e91fd6269f2a5214d5565
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.10
+    - opentelemetry-semantic-conventions-ai 0.4.11
     - anthropic >=0.17.0
     - tokenizers >=0.13.0
   run_constrained:
