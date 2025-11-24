@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-bedrock" %}
-{% set version = "0.49.0" %}
+{% set version = "0.49.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_bedrock-{{ version }}.tar.gz
-  sha256: ddd1eb9faf2ea3c4bfcfa85bec6e5bfeacb7d80153312c12a8e5a83a343c169f
+  sha256: cd97b4b06c0e666e77b0530169c8a26fcb93a583d4df549eadb922f2963c07d2
 
 build:
   noarch: python
