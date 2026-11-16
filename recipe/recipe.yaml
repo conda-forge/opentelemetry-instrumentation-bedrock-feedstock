@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-bedrock
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_bedrock-${{ version }}.tar.gz
-  sha256: d7209ee3ff63f710a0c914467bc63c35dae68ecee938b0fe16f979d70205e570
+  sha256: bec48d687bd96c9b07d57a74138f2f0f569be28c455b9b346d9bbeaaa8c6c26a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
